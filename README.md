@@ -40,8 +40,10 @@ index.html
 O projeto funciona direto no navegador, sem a necessidade de instalar dependências.
 
 ## 📂 Estrutura do Projeto
+```
 /
-│── index.html
-│── style.css
-│── script.js
+├── index.html
+├── style.css
+├── script.js
 └── README.md
+```
