@@ -1,74 +1,114 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    background: #2c2c3c;
+    background: #181820;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
 }
 
+/* Container */
 .container {
-    color: #f5f5f5;
-    max-width: 650px;
-    border: 2px solid;
-    border-radius: 15px;
-    margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
+    background: #22222e;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    color: #fff;
     text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Input */
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 #task {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.529);
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 7px;
-    outline: none;
-    border: #fff;
-    border-radius: 15px;
-    text-align: center;
-    color: #f5f5f5;
-}
-
-.btn-add>button {
-    font-weight: bold;
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
     border: none;
-    border-radius: 10px;
-    padding: 7px;
-    color: #f5f5f5;
+    outline: none;
+    background: #2f2f3a;
+    color: #fff;
+    font-size: 1rem;
 }
 
-.btn-add>button {
-    background-color: rgb(2, 252, 47);
-}
-
-.btn-add>button:hover {
-    background-color: rgb(0, 173, 32);
+/* Botão */
+.btn-add {
+    background: #4caf50;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
     cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
+.btn-add:hover {
+    background: #3e8e41;
+}
+
+/* Lista */
 #list {
-    display: inline-block;
+    margin-top: 10px;
+    list-style: none;
+    text-align: left;
 }
 
 #list li {
-    border-bottom: 1px solid;
-    width: 300px;
+    background: #2b2b37;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    transition: 0.3s;
 }
 
+#list li:hover {
+    transform: translateX(4px);
+}
+
+/* Área dos botões */
 .actions {
     display: flex;
-    gap: 10px
+    gap: 12px;
 }
 
-.container li button {
-    border-radius: 15px;
+.actions button {
+    background: none;
     border: none;
-    background-color: #ffffff00;
+    cursor: pointer;
+    color: #cfcfcf;
+    font-size: 1.1rem;
+    transition: 0.3s;
 }
 
-.container li button:hover {
-    cursor: pointer;
+.actions button:hover {
+    color: #fff;
+}
+
+/* Texto vazio */
+.vazio {
+    color: #bbb;
+    font-size: 0.95rem;
+    margin-top: 10px;
 }

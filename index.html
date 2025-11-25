@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+    <title>To-Do List | Ezequiel Merces</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
     <div class="container">
 
-        <h1>🗒️Minhas Tarefas</h1>
+        <h1><i class="fa-solid fa-list-check"></i> Minhas Tarefas</h1>
 
-        <input type="text" placeholder="Digite uma nova tarefa..." id="task">
-
-        <div class="btn-add"">
-            <button onclick=" adicionar()">➕ Adicionar</button>
+        <div class="input-area">
+            <input type="text" placeholder="Digite uma tarefa..." id="task">
+            <button class="btn-add" onclick="adicionar()">
+                <i class="fa-solid fa-plus"></i> Adicionar
+            </button>
         </div>
+
+        <p id="vazio" class="vazio">Nenhuma tarefa adicionada ainda.</p>
 
         <ul id="list"></ul>
 
     </div>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
